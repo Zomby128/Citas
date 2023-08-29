@@ -1,0 +1,43 @@
+.main{
+    color: darkblue;
+    text-align: center;
+    background-color: darkgray;
+    position: fixed;
+    border-radius: 10px;
+}
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 10px;
+}
+body label{
+    color: darkblue;
+}
+form{
+    background-color: gray;
+    border-radius: 10px;
+    align-self: center;
+    margin: 10px;
+}
+p{
+    color: darkblue;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    left: 50%;
+    text-align: left;
+    width: 36.5%;
+    max-width: 330px;
+    border-radius: 10px;
+    background-color: gray;
+}
+p:nth-child(odd) {
+    top: calc(50% + 100px);
+}
+  p:nth-child(even) {
+    top: calc(50% + 120px); /* Ajusta el valor para acercar los elementos */
+}

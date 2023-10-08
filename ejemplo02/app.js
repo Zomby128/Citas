@@ -9,7 +9,7 @@ function handleEvent(e) {
 
   if (userName === '' || userPass === '') {
     mostrarMensaje('Por favor, completa ambos campos.');
-  } else if (userPass.length >= 4) {
+  } else if (userPass.length <= 4) {
     mostrarMensaje('La contraseña debe ser de 5 caracteres o mas.');
   } else {
     mostrarMensaje(`Nombre de usuario: ${userName}<br>Contraseña de usuario: ${userPass}`);
